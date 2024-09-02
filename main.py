@@ -14,13 +14,9 @@ def mean_square_error(observed_values, expected_values) -> float:
     for observed, expected in zip(observed_values, expected_values):
         squared_diff.append((abs(expected - observed))**2)
 
-    #loop to count the sum of elements
-    sum = 0
-    for i in squared_diff:
-        sum += i
+    #returns the mean square error
+    return sum(squared_diff) / len(observed_values)
     
-    #return the calculated error
-    return sum / len(squared_diff) #divides sum by number of elements
 
 def main():
     print(mean_square_error([12, 12.4, 13.0], [14.0, 15.64, 15]))
