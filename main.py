@@ -20,6 +20,8 @@ def mean_square_error(observed_values, expected_values) -> float:
 
 def main():
     print(mean_square_error([12, 12.4, 13.0], [14.0, 15.64, 15]))
+    print(mean_square_error([121.0, 12.4132, 13.140], [14.076, 5.64, 15.00]))
+    print(mean_square_error([1, 1, 1], [1, 1, 1]))
 
 if __name__=="__main__":
     main()
